@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif; }
+
+.hidden_search {
+  display: none; }
+
+#search_results {
+  z-index: 100;
+  width: 80%;
+  background-color: white; }
+  #search_results li {
+    display: block;
+    height: 32px;
+    width: 100%; }
+  #search_results a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    width: 100%; }
+  #search_results a:hover {
+    background-color: #2ecc71; }
+
+.notification {
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  background-color: #2ecc71;
+  color: white;
+  text-align: center;
+  outline-color: black;
+  outline-style: solid;
+  outline-width: 1px; }
+  .notification .right {
+    float: right; }
+  .notification button {
+    height: 32px;
+    min-width: 100px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    outline: none;
+    border: none;
+    display: block; }
+  .notification button:hover {
+    background-color: #e6e6e6;
+    color: black;
+    cursor: pointer; }
+
+.content {
+  width: 100%;
+  margin: auto; }
+
+.leftcontent {
+  width: 25%;
+  float: left;
+  position: fixed; }
+
+.rightcontent {
+  width: 75%;
+  float: right;
+  padding-bottom: 128px; }
+
+.navbar {
+  width: 100%;
+  height: 48px;
+  line-height: 48px; }
+  .navbar ul, .navbar li {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative; }
+    .navbar ul .navbtn, .navbar li .navbtn {
+      text-decoration: none;
+      transition: .3s;
+      font-size: 14px; }
+    .navbar ul .navbtn:hover, .navbar li .navbtn:hover {
+      color: #2ecc71;
+      transition: .3s;
+      cursor: pointer;
+      border-top-color: #2ecc71;
+      border-top-width: 4px;
+      border-top-style: solid;
+      padding-top: 13px; }
+    .navbar ul .flopbox, .navbar li .flopbox {
+      position: absolute;
+      display: none;
+      background-color: black;
+      height: -100px;
+      left: 0;
+      bottom: 32px;
+      font-size: 12px;
+      width: 200px; }
+      .navbar ul .flopbox ul, .navbar ul .flopbox li, .navbar li .flopbox ul, .navbar li .flopbox li {
+        display: block;
+        margin: 0; }
+        .navbar ul .flopbox ul .flopbtn, .navbar ul .flopbox li .flopbtn, .navbar li .flopbox ul .flopbtn, .navbar li .flopbox li .flopbtn {
+          width: 100%;
+          height: 24px;
+          line-height: 24px;
+          color: white;
+          display: block;
+          transition: .3s;
+          padding-left: 4px;
+          text-decoration: none; }
+        .navbar ul .flopbox ul .flopbtn:hover, .navbar ul .flopbox li .flopbtn:hover, .navbar li .flopbox ul .flopbtn:hover, .navbar li .flopbox li .flopbtn:hover {
+          background-color: #2ecc71;
+          transition: .3s;
+          cursor: pointer; }
+    .navbar ul li:hover .flopbox, .navbar li li:hover .flopbox {
+      display: block; }
+  .navbar .left {
+    float: left;
+    position: relative; }
+  .navbar .right {
+    float: right;
+    position: relative; }
+
+.navbar-top {
+  background-color: #e6e6e6;
+  color: black; }
+  .navbar-top .navbtn {
+    color: black; }
+
+.navbar-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  color: white; }
+  .navbar-bottom .navbtn {
+    color: white; }
+
+.svg {
+  width: 32px;
+  height: 32px; }
+
+.navmenu {
+  width: 100%;
+  height: 100vh;
+  background-color: #34495e;
+  position: relative;
+  left: 0;
+  top: 0; }
+  .navmenu ul {
+    position: relative; }
+    .navmenu ul .nobtn {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 4px; }
+    .navmenu ul li {
+      position: relative; }
+      .navmenu ul li .menubtn {
+        display: block;
+        width: 100%;
+        transition: .3s;
+        font-size: 14px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-decoration: none;
+        color: white; }
+        .navmenu ul li .menubtn span {
+          padding-left: 4px;
+          transition: .3s; }
+      .navmenu ul li .menubtn:hover {
+        background-color: #2ecc71;
+        cursor: pointer;
+        transition: .3s; }
+        .navmenu ul li .menubtn:hover span {
+          padding-left: 12px;
+          transition: .3s; }
+
+.squeezed {
+  padding: 12px; }
+
+.text {
+  width: 80%;
+  padding-bottom: 12px; }
+
+.center {
+  margin: auto; }
+
+.intext {
+  width: 80%;
+  height: 32px;
+  background-color: white;
+  color: black;
+  outline: none;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 100%;
+  padding-left: 4px; }
+
+.inbigtext {
+  width: 80%;
+  height: 132px;
+  font-size: 100%;
+  outline: none; }
+
+.inlargetext {
+  width: 80%;
+  height: 420px;
+  font-size: 100%;
+  outline: none; }
+
+.struct {
+  margin-top: 12px;
+  display: block; }
+
+.btn {
+  height: 32px;
+  min-width: 100px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  outline: none;
+  border: none;
+  color: white;
+  text-decoration: none;
+  background-color: #34495e;
+  transition: .3s; }
+
+.btn:hover {
+  background-color: gray;
+  cursor: pointer;
+  transition: .3s; }
+
+.article {
+  width: 32%;
+  height: 250px;
+  overflow: hidden;
+  transition: .3s;
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  margin-left: 4px;
+  float: left; }
+
+.article:hover {
+  background-color: #2ecc71; }
+
+.table {
+  width: 100%; }
+  .table .table-head {
+    height: 48px; }
+  .table .table-head:hover {
+    background-color: white !important;
+    color: black !important; }
+  .table .alt {
+    background-color: #e6e6e6; }
+  .table tr {
+    height: 32px; }
+  .table tr:hover {
+    background-color: #2ecc71;
+    color: white !important; }
+    .table tr:hover a {
+      color: white !important; }
+
+code {
+  background-color: black;
+  padding: 24px;
+  color: white;
+  font-size: 16px;
+  display: block; }
+
+.comments-section {
+  width: 100%;
+  background-color: #e6e6e6;
+  min-height: 250px; }
+
+.profile-image {
+  width: 250px;
+  height: 250px;
+  background-color: #e6e6e6;
+  background-size: cover;
+  background-position: center; }
+
+.profile-header {
+  width: 100%;
+  height: 300px;
+  border-bottom-style: solid;
+  border-bottom-color: #e6e6e6;
+  border-bottom-width: 1px; }
+
+.profile-image-section {
+  width: 30%;
+  float: left; }
+
+.profile-info-section {
+  width: 60%;
+  float: left; }
+
+@media screen and (max-width: 700px) {
+  .leftcontent {
+    width: 100%;
+    float: right;
+    position: relative; }
+
+  .rightcontent {
+    float: left;
+    width: 100%; }
+
+  .article {
+    width: 100%;
+    margin: auto;
+    border-bottom-style: solid;
+    border-bottom-color: black; }
+
+  .profile-image-section, .profile-info-section {
+    width: 80%;
+    float: none; }
+
+  .profile-header {
+    border: none; } }
+
+/*# sourceMappingURL=style.css.map */
